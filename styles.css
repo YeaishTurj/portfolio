@@ -194,6 +194,7 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   line-height: 1.8;
+  word-spacing: 0.17em;
   padding: 0 20px 48px;
   animation: fadeIn 0.6s ease-out;
 }
