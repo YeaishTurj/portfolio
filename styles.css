@@ -57,6 +57,10 @@
   gap: 18px;
   align-items: start;
   margin-top: 18px;
+
+  .achievement-wrap > * {
+    min-width: 0;
+  }
 }
 
 .achievement-card {
@@ -66,6 +70,7 @@
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
   animation: fadeInUp 0.8s ease-out;
+  overflow: hidden;
 }
 
 .achievement-meta {
