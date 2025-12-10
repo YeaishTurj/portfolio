@@ -51,6 +51,108 @@
     transform: translateX(0);
   }
 }
+.achievement-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.achievement-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.achievement-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pill.mini {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.achievement-card h3 {
+  margin: 6px 0 10px;
+  font-size: 20px;
+  font-family: var(--font-display);
+}
+
+.achievement-desc {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.achievement-points {
+  margin: 0 0 14px 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+}
+
+.achievement-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.certificate-preview {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.certificate-preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(56, 244, 195, 0.12),
+    rgba(247, 201, 72, 0.06)
+  );
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.certificate-preview img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.signatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.sig-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.sig-role {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
 
 @keyframes pulse {
   0%,
@@ -86,7 +188,7 @@ body {
     var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  line-height: 1.6;
+  line-height: 1.8;
   padding: 0 20px 48px;
   animation: fadeIn 0.6s ease-out;
 }
@@ -210,12 +312,13 @@ nav a:hover {
   align-items: start;
   margin-bottom: 56px;
   animation: fadeInUp 0.8s ease-out;
+  scroll-margin-top: 120px;
 }
 
 .hero__text h1 {
   font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 52px);
-  line-height: 1.1;
+  line-height: 1.3;
   margin: 8px 0 12px;
 }
 
@@ -379,6 +482,7 @@ nav a:hover {
 .section {
   margin: 72px 0;
   animation: fadeInUp 0.8s ease-out;
+  scroll-margin-top: 120px;
 }
 
 .section__header h2 {
@@ -751,6 +855,10 @@ nav a:hover {
 
 @media (max-width: 960px) {
   .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-wrap {
     grid-template-columns: 1fr;
   }
 
