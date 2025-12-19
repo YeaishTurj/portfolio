@@ -10,8 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
@@ -19,82 +23,126 @@
   </head>
   <body>
     <div class="backdrop" aria-hidden="true"></div>
+    <div class="noise-overlay"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
     <header class="nav-shell">
-      <div class="logo">YJT</div>
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">YJT</span>
+      </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#participation">Participation</a>
-        <a href="#cp">Competitive</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="#participation"><i class="fas fa-trophy"></i> Achievements</a>
+        <a href="#cp"><i class="fas fa-brain"></i> Competitive</a>
+        <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
       </nav>
-      <a class="pill" href="mailto:yjturj12104@gmail.com">Let us build</a>
+      <a class="pill glow-btn" href="mailto:yjturj12104@gmail.com">
+        <i class="fas fa-paper-plane"></i> Let's build
+      </a>
     </header>
 
     <main>
       <section class="hero" id="top">
         <div class="hero__text">
-          <p class="eyebrow">Full-stack developer \ Competitive programmer</p>
-          <h1>Hey, I am <span>Yeaish Jahan Turj</span>.</h1>
+          <div class="status-badge">
+            <span class="pulse"></span>
+            <span>Available for opportunities</span>
+          </div>
+          <p class="eyebrow">Full-stack Developer • Competitive Programmer</p>
+          <h1>Hey, I'm <span class="gradient-text">Yeaish Jahan Turj</span></h1>
           <p class="lede">
             Building purposeful products for students and communities, shipping
             clean code, and solving hard problems with a smile.
           </p>
           <div class="cta-row">
             <a
-              class="pill primary"
+              class="pill primary shimmer"
               href="https://github.com/YeaishTurj"
               target="_blank"
               rel="noreferrer"
-              >GitHub</a
+              ><i class="fab fa-github"></i> GitHub</a
             >
             <a
               class="pill ghost"
               href="https://www.linkedin.com/in/yeaish-jahan-turj-73186b2a6"
               target="_blank"
               rel="noreferrer"
-              >LinkedIn</a
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
             >
             <a class="pill ghost" href="assets/YeaishResume.pdf" download>
-              Resume (PDF)
+              <i class="fas fa-download"></i> Resume
             </a>
-            <a class="pill ghost" href="#projects">See projects</a>
+            <a class="pill ghost" href="#projects">
+              <i class="fas fa-arrow-down"></i> Projects
+            </a>
           </div>
           <div class="meta-grid">
-            <div class="metric">
-              <div class="metric__value">1000+</div>
-              <div class="metric__label">Problems solved</div>
+            <div class="metric glass-card">
+              <div class="metric__icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="metric__content">
+                <div class="metric__value counter" data-target="1000">
+                  1000+
+                </div>
+                <div class="metric__label">Problems Solved</div>
+              </div>
             </div>
-            <div class="metric">
-              <div class="metric__value">Full-stack</div>
-              <div class="metric__label">React, Node.js, SQL/NoSQL</div>
+            <div class="metric glass-card">
+              <div class="metric__icon"><i class="fas fa-layer-group"></i></div>
+              <div class="metric__content">
+                <div class="metric__value">Full-stack</div>
+                <div class="metric__label">React, Node.js, SQL/NoSQL</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hero__card">
+        <div class="hero__card glass-card">
           <div class="badge-row">
-            <span class="chip">Open to collaborate</span>
-            <span class="chip chip--outline">Tech guide @ CUET</span>
+            <span class="chip pulse-chip"
+              ><span class="pulse"></span> Open to collaborate</span
+            >
+            <span class="chip chip--outline"
+              ><i class="fas fa-graduation-cap"></i> Tech guide @ CUET</span
+            >
           </div>
           <div class="hero__panel">
-            <p class="panel__title">Live focus</p>
+            <p class="panel__title">
+              <i class="fas fa-bullseye"></i> Live Focus
+            </p>
             <ul class="panel__list">
-              <li>Shipping ClaimPoint: smart lost and found for campuses.</li>
-              <li>Sharpening algorithms: Codeforces 1395, LeetCode 1756 CR.</li>
               <li>
-                Mentoring juniors: clean code, debugging, version control.
+                <i class="fas fa-chevron-right"></i> Shipping ClaimPoint: smart
+                lost and found for campuses.
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Sharpening algorithms:
+                Codeforces 1395, LeetCode 1756 CR.
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Mentoring juniors: clean
+                code, debugging, version control.
               </li>
             </ul>
           </div>
           <div class="hero__contact">
-            <div>
-              <p class="contact__label">Email</p>
+            <div class="contact-item">
+              <p class="contact__label">
+                <i class="fas fa-envelope"></i> Email
+              </p>
               <a href="mailto:yjturj12104@gmail.com">yjturj12104@gmail.com</a>
             </div>
-            <div>
-              <p class="contact__label">Location</p>
+            <div class="contact-item">
+              <p class="contact__label">
+                <i class="fas fa-map-marker-alt"></i> Location
+              </p>
               <p>Chittagong, Bangladesh</p>
             </div>
           </div>
@@ -103,32 +151,38 @@
 
       <section class="section" id="about">
         <div class="section__header">
-          <p class="eyebrow">About</p>
-          <h2>Turning ideas into fast, reliable experiences.</h2>
+          <p class="eyebrow"><i class="fas fa-user"></i> About Me</p>
+          <h2>
+            Turning ideas into
+            <span class="gradient-text">fast, reliable</span> experiences.
+          </h2>
           <p class="section__lede">
-            I am a Computer Science student at CUET who loves pairing deep
+            I'm a Computer Science student at CUET who loves pairing deep
             problem-solving with pragmatic engineering. From marketplace
             platforms to ML experiments, I ship end-to-end: APIs, data, and
             polished UIs.
           </p>
         </div>
         <div class="pill-grid">
-          <div class="pill-card">
-            <p class="pill-card__title">What I enjoy</p>
+          <div class="pill-card glass-card hover-lift">
+            <div class="pill-card__icon"><i class="fas fa-heart"></i></div>
+            <p class="pill-card__title">What I Enjoy</p>
             <p>
               Designing product flows, writing expressive React components, and
               tightening performance on the backend.
             </p>
           </div>
-          <div class="pill-card">
-            <p class="pill-card__title">How I work</p>
+          <div class="pill-card glass-card hover-lift">
+            <div class="pill-card__icon"><i class="fas fa-cogs"></i></div>
+            <p class="pill-card__title">How I Work</p>
             <p>
               Iterate quickly, document decisions, and keep tests close to
               features. I thrive in small squads with clear ownership.
             </p>
           </div>
-          <div class="pill-card">
-            <p class="pill-card__title">Currently exploring</p>
+          <div class="pill-card glass-card hover-lift">
+            <div class="pill-card__icon"><i class="fas fa-flask"></i></div>
+            <p class="pill-card__title">Currently Exploring</p>
             <p>
               ML-assisted item matching for ClaimPoint, and better deployment
               pipelines with Docker.
@@ -139,86 +193,165 @@
 
       <section class="section" id="skills">
         <div class="section__header">
-          <p class="eyebrow">Skills</p>
-          <h2>Languages, frameworks, and tools I live in.</h2>
+          <p class="eyebrow"><i class="fas fa-code"></i> Skills</p>
+          <h2>
+            Languages, frameworks, and
+            <span class="gradient-text">tools I live in</span>.
+          </h2>
         </div>
 
         <!-- Tier 1: Core Expertise -->
         <div class="skill-tier">
-          <p class="tier-label">Core Expertise</p>
+          <p class="tier-label"><i class="fas fa-star"></i> Core Expertise</p>
           <div class="skill-tags-row">
-            <span class="skill-tag tier-1">C/C++</span>
-            <span class="skill-tag tier-1">Python</span>
-            <span class="skill-tag tier-1">JavaScript</span>
-            <span class="skill-tag tier-1">Backend Development</span>
+            <span class="skill-tag tier-1"
+              ><i class="fas fa-code"></i> C/C++</span
+            >
+            <span class="skill-tag tier-1"
+              ><i class="fab fa-python"></i> Python</span
+            >
+            <span class="skill-tag tier-1"
+              ><i class="fab fa-js-square"></i> JavaScript</span
+            >
+            <span class="skill-tag tier-1"
+              ><i class="fas fa-server"></i> Backend Development</span
+            >
           </div>
         </div>
 
         <!-- Tier 2: Strong Proficiency -->
         <div class="skill-tier">
-          <p class="tier-label">Strong Proficiency</p>
+          <p class="tier-label">
+            <i class="fas fa-bolt"></i> Strong Proficiency
+          </p>
           <div class="skill-tags-row">
-            <span class="skill-tag tier-2">Node.js</span>
-            <span class="skill-tag tier-2">Express.js</span>
-            <span class="skill-tag tier-2">React</span>
-            <span class="skill-tag tier-2">SQL / NoSQL</span>
-            <span class="skill-tag tier-2">PostgreSQL</span>
-            <span class="skill-tag tier-2">MongoDB</span>
-            <span class="skill-tag tier-2">Git / GitHub</span>
-            <span class="skill-tag tier-2">Linux</span>
+            <span class="skill-tag tier-2"
+              ><i class="fab fa-node-js"></i> Node.js</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fas fa-server"></i> Express.js</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fab fa-react"></i> React</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fas fa-database"></i> SQL / NoSQL</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fas fa-database"></i> PostgreSQL</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fas fa-leaf"></i> MongoDB</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fab fa-git-alt"></i> Git / GitHub</span
+            >
+            <span class="skill-tag tier-2"
+              ><i class="fab fa-linux"></i> Linux</span
+            >
           </div>
         </div>
 
         <!-- Tier 3: Solid Working Knowledge -->
         <div class="skill-tier">
-          <p class="tier-label">Solid Working Knowledge</p>
+          <p class="tier-label">
+            <i class="fas fa-wrench"></i> Solid Working Knowledge
+          </p>
           <div class="skill-tags-row">
-            <span class="skill-tag tier-3">Docker</span>
-            <span class="skill-tag tier-3">Tailwind CSS</span>
-            <span class="skill-tag tier-3">HTML/CSS</span>
-            <span class="skill-tag tier-3">REST APIs</span>
-            <span class="skill-tag tier-3">MySQL</span>
-            <span class="skill-tag tier-3">Data Structures & Algorithms</span>
+            <span class="skill-tag tier-3"
+              ><i class="fab fa-docker"></i> Docker</span
+            >
+            <span class="skill-tag tier-3"
+              ><i class="fas fa-wind"></i> Tailwind CSS</span
+            >
+            <span class="skill-tag tier-3"
+              ><i class="fab fa-html5"></i> HTML/CSS</span
+            >
+            <span class="skill-tag tier-3"
+              ><i class="fas fa-plug"></i> REST APIs</span
+            >
+            <span class="skill-tag tier-3"
+              ><i class="fas fa-database"></i> MySQL</span
+            >
+            <span class="skill-tag tier-3"
+              ><i class="fas fa-sitemap"></i> Data Structures & Algorithms</span
+            >
           </div>
         </div>
 
         <!-- Tier 4: Familiar With -->
         <div class="skill-tier">
-          <p class="tier-label">Familiar With</p>
+          <p class="tier-label"><i class="fas fa-book"></i> Familiar With</p>
           <div class="skill-tags-row">
-            <span class="skill-tag tier-4">Java</span>
-            <span class="skill-tag tier-4">JavaFX</span>
-            <span class="skill-tag tier-4">C#</span>
-            <span class="skill-tag tier-4">NumPy</span>
-            <span class="skill-tag tier-4">Pandas</span>
-            <span class="skill-tag tier-4">Scikit-learn</span>
-            <span class="skill-tag tier-4">Bash/Shell</span>
+            <span class="skill-tag tier-4"
+              ><i class="fab fa-java"></i> Java</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fab fa-java"></i> JavaFX</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fab fa-microsoft"></i> C#</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fas fa-calculator"></i> NumPy</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fas fa-table"></i> Pandas</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fas fa-brain"></i> Scikit-learn</span
+            >
+            <span class="skill-tag tier-4"
+              ><i class="fas fa-terminal"></i> Bash/Shell</span
+            >
           </div>
         </div>
 
         <!-- Tier 5: Exploring -->
         <div class="skill-tier">
-          <p class="tier-label">Exploring</p>
+          <p class="tier-label"><i class="fas fa-seedling"></i> Exploring</p>
           <div class="skill-tags-row">
-            <span class="skill-tag tier-5">Flutter</span>
-            <span class="skill-tag tier-5">Android Development</span>
+            <span class="skill-tag tier-5"
+              ><i class="fas fa-mobile-alt"></i> Flutter</span
+            >
+            <span class="skill-tag tier-5"
+              ><i class="fab fa-android"></i> Android Development</span
+            >
           </div>
         </div>
       </section>
 
       <section class="section" id="projects">
         <div class="section__header">
-          <p class="eyebrow">Projects</p>
-          <h2>Selected builds that ship value.</h2>
+          <p class="eyebrow"><i class="fas fa-rocket"></i> Projects</p>
+          <h2>
+            Selected builds that <span class="gradient-text">ship value</span>.
+          </h2>
         </div>
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">ClaimPoint</p>
-              <span class="chip">Live build</span>
+              <p class="project__title">
+                <i class="fas fa-search"></i> ClaimPoint
+              </p>
+              <span class="chip live-chip"
+                ><span class="pulse"></span> Live build</span
+              >
             </div>
             <p class="project__stack">
-              React, Node.js, PostgreSQL, Python ML, Docker
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-database"></i> PostgreSQL</span
+              >
+              <span class="tech-badge"
+                ><i class="fab fa-python"></i> Python ML</span
+              >
+              <span class="tech-badge"
+                ><i class="fab fa-docker"></i> Docker</span
+              >
             </p>
             <p class="project__desc">
               Smart lost and found system with AI-powered matching to reunite
@@ -229,18 +362,32 @@
                 href="https://github.com/YeaishTurj/claimpoint-smart-lost-found"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">CUET Trade Portal</p>
-              <span class="chip chip--outline">Marketplace</span>
+              <p class="project__title">
+                <i class="fas fa-store"></i> CUET Trade Portal
+              </p>
+              <span class="chip chip--outline"
+                ><i class="fas fa-shopping-cart"></i> Marketplace</span
+              >
             </div>
             <p class="project__stack">
-              React, Node.js, Express.js, MongoDB, Tailwind
+              <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+              <span class="tech-badge"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-leaf"></i> MongoDB</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-wind"></i> Tailwind</span
+              >
             </p>
             <p class="project__desc">
               Marketplace for CUET students with buying, selling, and
@@ -251,17 +398,33 @@
                 href="https://github.com/YeaishTurj/CUET-Trade-Lost-Found-Portal"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">T-Sell & Buy (Web)</p>
-              <span class="chip">Web app</span>
+              <p class="project__title">
+                <i class="fas fa-globe"></i> T-Sell & Buy (Web)
+              </p>
+              <span class="chip"><i class="fas fa-globe"></i> Web app</span>
             </div>
-            <p class="project__stack">Node.js, Express.js, MySQL, Bootstrap</p>
+            <p class="project__stack">
+              <span class="tech-badge"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-server"></i> Express.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+              <span class="tech-badge"
+                ><i class="fab fa-bootstrap"></i> Bootstrap</span
+              >
+            </p>
             <p class="project__desc">
               Student marketplace with user registration, product listing, and
               search.
@@ -271,17 +434,28 @@
                 href="https://github.com/YeaishTurj/CUET-T-Sell-Buy-Web"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">T-Sell & Buy (Java)</p>
-              <span class="chip chip--outline">Desktop</span>
+              <p class="project__title">
+                <i class="fas fa-desktop"></i> T-Sell & Buy (Java)
+              </p>
+              <span class="chip chip--outline"
+                ><i class="fas fa-desktop"></i> Desktop</span
+              >
             </div>
-            <p class="project__stack">JavaFX, JDBC, SQL Server</p>
+            <p class="project__stack">
+              <span class="tech-badge"><i class="fab fa-java"></i> JavaFX</span>
+              <span class="tech-badge"><i class="fas fa-plug"></i> JDBC</span>
+              <span class="tech-badge"
+                ><i class="fas fa-database"></i> SQL Server</span
+              >
+            </p>
             <p class="project__desc">
               Desktop marketplace with authentication and product management
               using MVC.
@@ -291,17 +465,31 @@
                 href="https://github.com/YeaishTurj/CUET-T-Sell-Buy-Java"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">Library Management System</p>
-              <span class="chip">Web</span>
+              <p class="project__title">
+                <i class="fas fa-book"></i> Library Management
+              </p>
+              <span class="chip"><i class="fas fa-globe"></i> Web</span>
             </div>
-            <p class="project__stack">Node.js, Express.js, MongoDB, EJS</p>
+            <p class="project__stack">
+              <span class="tech-badge"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-server"></i> Express.js</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-leaf"></i> MongoDB</span
+              >
+              <span class="tech-badge"><i class="fas fa-code"></i> EJS</span>
+            </p>
             <p class="project__desc">
               CRUD library system with borrowing and return flows via RESTful
               APIs.
@@ -311,17 +499,35 @@
                 href="https://github.com/YeaishTurj/Library-Management-System"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card glass-card hover-lift">
             <div class="project__head">
-              <p class="project__title">ML Core Topics</p>
-              <span class="chip chip--outline">Data</span>
+              <p class="project__title">
+                <i class="fas fa-brain"></i> ML Core Topics
+              </p>
+              <span class="chip chip--outline"
+                ><i class="fas fa-chart-line"></i> Data</span
+              >
             </div>
-            <p class="project__stack">Python, NumPy, Pandas, scikit-learn</p>
+            <p class="project__stack">
+              <span class="tech-badge"
+                ><i class="fab fa-python"></i> Python</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-calculator"></i> NumPy</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-table"></i> Pandas</span
+              >
+              <span class="tech-badge"
+                ><i class="fas fa-brain"></i> scikit-learn</span
+              >
+            </p>
             <p class="project__desc">
               Hands-on implementations of classic ML algorithms with notebooks
               and visualizations.
@@ -331,7 +537,8 @@
                 href="https://github.com/YeaishTurj/ml-core-topics"
                 target="_blank"
                 rel="noreferrer"
-                >Repository</a
+                class="project-link"
+                ><i class="fab fa-github"></i> Repository</a
               >
             </div>
           </article>
@@ -340,8 +547,11 @@
 
       <section class="section" id="participation">
         <div class="section__header">
-          <p class="eyebrow">Participation</p>
-          <h2>Events, contests, and experiences.</h2>
+          <p class="eyebrow"><i class="fas fa-trophy"></i> Achievements</p>
+          <h2>
+            Events, contests, and
+            <span class="gradient-text">experiences</span>.
+          </h2>
           <p class="section__lede">
             Here you can find a record of my participations in programming
             contests, tech events, and other activities—showcasing learning,
@@ -350,63 +560,86 @@
         </div>
 
         <div class="achievement-wrap">
-          <div class="achievement-card">
+          <div class="achievement-card glass-card hover-lift">
             <div class="achievement-meta">
-              <p class="pill mini">Feb 11, 2024</p>
-              <p class="pill mini ghost">CUET</p>
+              <p class="pill mini">
+                <i class="far fa-calendar"></i> Feb 11, 2024
+              </p>
+              <p class="pill mini ghost">
+                <i class="fas fa-university"></i> CUET
+              </p>
             </div>
-            <h3>ASRRO ROBOCODER 2.0 Programming Contest</h3>
+            <h3>
+              <i class="fas fa-robot"></i> ASRRO ROBOCODER 2.0 Programming
+              Contest
+            </h3>
             <p class="achievement-desc">
               Participated in the ASRRO ROBOCODER 2.0 contest, hosted at the EME
               Building, CUET. Solved algorithmic problems and collaborated with
               peers under contest pressure.
             </p>
             <ul class="achievement-points">
-              <li>Tested speed and accuracy across multiple problem sets.</li>
               <li>
-                Applied competitive programming patterns and optimization.
+                <i class="fas fa-check"></i> Tested speed and accuracy across
+                multiple problem sets.
               </li>
               <li>
-                Collaborated with peers and performed under contest pressure.
+                <i class="fas fa-check"></i> Applied competitive programming
+                patterns and optimization.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Collaborated with peers and
+                performed under contest pressure.
               </li>
             </ul>
             <div class="achievement-actions">
-              <a class="pill primary" href="assets/asrro.jpeg" download
-                >Download certificate</a
+              <a class="pill primary shimmer" href="assets/asrro.jpeg" download
+                ><i class="fas fa-download"></i> Download certificate</a
               >
               <a
                 class="pill ghost"
                 href="assets/asrro.jpeg"
                 target="_blank"
                 rel="noreferrer"
-                >View full size</a
+                ><i class="fas fa-external-link-alt"></i> View full size</a
               >
             </div>
             <div class="signatures">
               <div>
-                <p class="sig-name">Prof. Dr. Muhammad Ahsan Ullah</p>
+                <p class="sig-name">
+                  <i class="fas fa-user-tie"></i> Prof. Dr. Muhammad Ahsan Ullah
+                </p>
                 <p class="sig-role">Moderator, ASRRO</p>
               </div>
               <div>
-                <p class="sig-name">Tashdid Abbasy Tonmoy</p>
+                <p class="sig-name">
+                  <i class="fas fa-user-tie"></i> Tashdid Abbasy Tonmoy
+                </p>
                 <p class="sig-role">President, ASRRO</p>
               </div>
             </div>
           </div>
 
-          <div class="certificate-preview">
+          <div class="certificate-preview glass-card">
             <img
               src="assets/asrro.jpeg"
               alt="ASRRO ROBOCODER 2.0 certificate"
             />
           </div>
 
-          <div class="achievement-card">
+          <div class="achievement-card glass-card hover-lift">
             <div class="achievement-meta">
-              <p class="pill mini">Dec 12, 2025</p>
-              <p class="pill mini ghost">CUET CSE Fest</p>
+              <p class="pill mini">
+                <i class="far fa-calendar"></i> Dec 12, 2025
+              </p>
+              <p class="pill mini ghost">
+                <i class="fas fa-code"></i> CUET CSE Fest
+              </p>
             </div>
-            <h3>Micro-Ops Hackathon – CUET CSE Fest 2025</h3>
+            <h3>
+              <i class="fas fa-laptop-code"></i> Micro-Ops Hackathon – CUET CSE
+              Fest 2025
+            </h3>
             <p class="achievement-desc">
               Selected as Top 50 team and participated in the final round of the
               Micro-Ops Hackathon (team: <b>AI_WILL_REPLACE_US</b>).
@@ -414,36 +647,46 @@
               engineering challenge.
             </p>
             <ul class="achievement-points">
-              <li>Advanced to the on-campus final round after prelims.</li>
               <li>
-                Collaborated on S3 integration, architecture, CI/CD, and
-                observability challenges.
+                <i class="fas fa-check"></i> Advanced to the on-campus final
+                round after prelims.
               </li>
               <li>
-                Received certificate for active participation and innovation.
+                <i class="fas fa-check"></i> Collaborated on S3 integration,
+                architecture, CI/CD, and observability challenges.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Received certificate for active
+                participation and innovation.
               </li>
             </ul>
             <div class="achievement-actions">
-              <a class="pill primary" href="assets/YeaishHackathon.pdf" download
-                >Download certificate</a
+              <a
+                class="pill primary shimmer"
+                href="assets/YeaishHackathon.pdf"
+                download
+                ><i class="fas fa-download"></i> Download certificate</a
               >
               <a
                 class="pill ghost"
                 href="assets/YeaishHackathon.jpg"
                 target="_blank"
                 rel="noreferrer"
-                >View certificate image</a
+                ><i class="fas fa-external-link-alt"></i> View certificate
+                image</a
               >
             </div>
             <div class="signatures">
               <div>
-                <p class="sig-name">Prof. Dr. Pranab Kumar Dhar</p>
+                <p class="sig-name">
+                  <i class="fas fa-user-tie"></i> Prof. Dr. Pranab Kumar Dhar
+                </p>
                 <p class="sig-role">Head, Dept. of CSE, CUET</p>
               </div>
             </div>
           </div>
 
-          <div class="certificate-preview">
+          <div class="certificate-preview glass-card">
             <img
               src="assets/YeaishHackathon.jpg"
               alt="Micro-Ops Hackathon Certificate"
@@ -454,58 +697,68 @@
 
       <section class="section" id="cp">
         <div class="section__header">
-          <p class="eyebrow">Competitive Programming</p>
-          <h2>Practicing patterns, speed, and clarity.</h2>
+          <p class="eyebrow"><i class="fas fa-brain"></i> Competitive Programming</p>
+          <h2>Practicing patterns, <span class="gradient-text">speed, and clarity</span>.</h2>
         </div>
         <div class="cp-grid">
-          <div class="cp-card">
+          <div class="cp-card glass-card hover-lift">
+            <div class="cp-icon codeforces"><i class="fas fa-code"></i></div>
             <p class="metric__value">1395</p>
             <p class="cp__label">Codeforces max rating</p>
             <a
               href="https://codeforces.com/profile/Yeaish_Turj"
               target="_blank"
               rel="noreferrer"
-              >Profile</a
+              class="cp-link"
+              ><i class="fas fa-external-link-alt"></i> Profile</a
             >
           </div>
-          <div class="cp-card">
+          <div class="cp-card glass-card hover-lift">
+            <div class="cp-icon leetcode"><i class="fas fa-laptop-code"></i></div>
             <p class="metric__value">1756</p>
             <p class="cp__label">LeetCode contest rating</p>
             <a
               href="https://leetcode.com/u/Yeaish_Turj"
               target="_blank"
               rel="noreferrer"
-              >Profile</a
+              class="cp-link"
+              ><i class="fas fa-external-link-alt"></i> Profile</a
             >
           </div>
-          <div class="cp-card">
+          <div class="cp-card glass-card hover-lift">
+            <div class="cp-icon solved"><i class="fas fa-check-double"></i></div>
             <p class="metric__value">1000+</p>
             <p class="cp__label">Problems solved</p>
             <a
               href="https://github.com/YeaishTurj/problem-solutions"
               target="_blank"
               rel="noreferrer"
-              >Problem archive</a
+              class="cp-link"
+              ><i class="fab fa-github"></i> Problem archive</a
             >
           </div>
-          <div class="cp-card">
+          <div class="cp-card glass-card hover-lift">
+            <div class="cp-icon atcoder"><i class="fas fa-trophy"></i></div>
             <p class="metric__value">470</p>
             <p class="cp__label">AtCoder highest rating</p>
             <a
               href="https://atcoder.jp/users/Yeaish_Turj"
               target="_blank"
               rel="noreferrer"
-              >Profile</a
+              class="cp-link"
+              ><i class="fas fa-external-link-alt"></i> Profile</a
             >
           </div>
-          <div class="cp-card">
+          <div class="cp-card glass-card hover-lift">
+            <div class="cp-icon codechef"><i class="fas fa-utensils"></i></div>
             <p class="metric__value">1632</p>
             <p class="cp__label">CodeChef highest rating</p>
             <a
               href="https://www.codechef.com/users/yeaish_turj"
               target="_blank"
               rel="noreferrer"
-              >Profile</a
+              class="cp-link"
+              ><i class="fas fa-external-link-alt"></i> Profile</a
             >
           </div>
         </div>
@@ -513,30 +766,32 @@
 
       <section class="section" id="experience">
         <div class="section__header">
-          <p class="eyebrow">Experience</p>
-          <h2>Guiding peers and competing regularly.</h2>
+          <p class="eyebrow"><i class="fas fa-briefcase"></i> Experience</p>
+          <h2>Guiding peers and <span class="gradient-text">competing regularly</span>.</h2>
         </div>
         <div class="timeline">
-          <div class="timeline__item">
+          <div class="timeline__item glass-card hover-lift">
+            <div class="timeline__icon"><i class="fas fa-hands-helping"></i></div>
             <div class="timeline__meta">
               <p class="timeline__title">Tech Guide Volunteer</p>
-              <p class="timeline__org">CUET Computer Club</p>
+              <p class="timeline__org"><i class="fas fa-users"></i> CUET Computer Club</p>
             </div>
             <div class="timeline__body">
-              <p>2023 - Present</p>
+              <p class="timeline__date"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
               <p>
                 Helping peers master programming fundamentals, debugging
                 strategies, and clean version control practices.
               </p>
             </div>
           </div>
-          <div class="timeline__item">
+          <div class="timeline__item glass-card hover-lift">
+            <div class="timeline__icon"><i class="fas fa-trophy"></i></div>
             <div class="timeline__meta">
               <p class="timeline__title">Coding Competitions</p>
-              <p class="timeline__org">University-level</p>
+              <p class="timeline__org"><i class="fas fa-university"></i> University-level</p>
             </div>
             <div class="timeline__body">
-              <p>2023 - Present</p>
+              <p class="timeline__date"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
               <p>
                 Active participant in contests, sharpening speed, accuracy, and
                 teamwork under pressure.
@@ -548,58 +803,121 @@
 
       <section class="section" id="education">
         <div class="section__header">
-          <p class="eyebrow">Education</p>
-          <h2>Foundations in computing and systems.</h2>
+          <p class="eyebrow"><i class="fas fa-graduation-cap"></i> Education</p>
+          <h2>Foundations in <span class="gradient-text">computing and systems</span>.</h2>
         </div>
         <div class="edu-grid">
-          <div class="edu-card">
+          <div class="edu-card glass-card hover-lift">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
             <p class="edu__title">B.Sc. in CSE</p>
             <p class="edu__org">
               Chittagong University of Engineering and Technology
             </p>
-            <p class="edu__meta">2023 - Present</p>
+            <p class="edu__meta"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
           </div>
-          <div class="edu-card">
+          <div class="edu-card glass-card hover-lift">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
             <p class="edu__title">Higher Secondary Certificate</p>
             <p class="edu__org">Notre Dame College, Dhaka</p>
-            <p class="edu__meta">2019 - 2021 | GPA 5.00</p>
+            <p class="edu__meta"><i class="far fa-calendar-alt"></i> 2019 - 2021 | <span class="highlight">GPA 5.00</span></p>
           </div>
-          <div class="edu-card">
+          <div class="edu-card glass-card hover-lift">
+            <div class="edu-icon"><i class="fas fa-book-reader"></i></div>
             <p class="edu__title">Secondary School Certificate</p>
             <p class="edu__org">Monipur High School and College</p>
-            <p class="edu__meta">2009 - 2019 | GPA 5.00</p>
+            <p class="edu__meta"><i class="far fa-calendar-alt"></i> 2009 - 2019 | <span class="highlight">GPA 5.00</span></p>
           </div>
         </div>
       </section>
 
-      <section class="cta" id="contact">
-        <div>
-          <p class="eyebrow">Next build</p>
+      <section class="cta glass-card" id="contact">
+        <div class="cta__content">
+          <p class="eyebrow"><i class="fas fa-handshake"></i> Let's Connect</p>
           <h2>
-            Have an idea for students, communities, or data-heavy workflows?
+            Have an idea for students, communities, or <span class="gradient-text">data-heavy workflows</span>?
           </h2>
           <p class="section__lede">
-            Let us pair up. I enjoy designing the architecture, implementing the
+            Let's pair up. I enjoy designing the architecture, implementing the
             first version, and iterating fast.
           </p>
         </div>
         <div class="cta__actions">
-          <a class="pill primary" href="mailto:yjturj12104@gmail.com"
-            >Email me</a
+          <a class="pill primary shimmer" href="mailto:yjturj12104@gmail.com"
+            ><i class="fas fa-envelope"></i> Email me</a
           >
           <a
             class="pill ghost"
             href="https://github.com/YeaishTurj"
             target="_blank"
             rel="noreferrer"
-            >GitHub</a
+            ><i class="fab fa-github"></i> GitHub</a
           >
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Built by Yeaish Jahan Turj — crafted with curiosity and care.</p>
+      <div class="footer-content">
+        <div class="footer-logo">⚡ YJT</div>
+        <p>Built by <span class="gradient-text">Yeaish Jahan Turj</span> — crafted with curiosity and care.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/YeaishTurj" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/yeaish-jahan-turj-73186b2a6" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:yjturj12104@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2025 Yeaish Jahan Turj. All rights reserved.</p>
+      </div>
     </footer>
+    
+    <script>
+      // Smooth reveal animations on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.section, .project-card, .pill-card, .cp-card, .edu-card, .timeline__item, .achievement-card').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        observer.observe(el);
+      });
+
+      // Active nav link highlighting
+      const sections = document.querySelectorAll('section[id]');
+      window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        sections.forEach(section => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 200;
+          const sectionId = section.getAttribute('id');
+          const navLink = document.querySelector(`nav a[href="#${sectionId}"]`);
+          if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              navLink.classList.add('active');
+            } else {
+              navLink.classList.remove('active');
+            }
+          }
+        });
+      });
+
+      // Parallax effect for floating shapes
+      document.addEventListener('mousemove', (e) => {
+        const shapes = document.querySelectorAll('.shape');
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        shapes.forEach((shape, index) => {
+          const speed = (index + 1) * 20;
+          shape.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+      });
+    </script>
   </body>
 </html>
