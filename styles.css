@@ -1881,10 +1881,13 @@ nav a.active::after {
     text-align: center;
     border-radius: var(--radius-sm);
     background: rgba(255, 255, 255, 0.03);
+    flex-direction: column;
+    gap: 4px;
   }
 
   nav a i {
-    display: none;
+    opacity: 1;
+    font-size: 16px;
   }
 
   nav a::after {
